@@ -73,7 +73,7 @@ public class SaltosLongitud{
 			for(int j=0;j<saltos[i].length;j++) 
 				if(saltos[i][j] > mejorSalto) 
 				mejorSalto = saltos[i][j];
-			System.out.println("El mejor salto del atleta " + i + " es: " + mejorSalto);	
+			System.out.println("El mejor salto del atleta " + (i + 1) + " es: " + mejorSalto);	
 		}
 		
 		System.out.println("\n");
@@ -89,7 +89,7 @@ public class SaltosLongitud{
 				  	porcentajeNulo = (double) nulosAtleta /(saltos[i].length) * (100);
 				  	
 			  }
-				System.out.println("El atleta " + i + " tiene : " + porcentajeNulo + " porcentaje de saltos nulos");	
+				System.out.println("El atleta " + (i + 1) + " tiene : " + porcentajeNulo + " porcentaje de saltos nulos");	
 
 		  }
 		System.out.println("\n");
