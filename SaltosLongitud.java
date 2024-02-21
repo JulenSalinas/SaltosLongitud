@@ -57,13 +57,21 @@ public class SaltosLongitud{
 		System.out.println("\n");
 		
 		int cantidadNulo = 0;
-		  for(int i=0;i<saltos.length;i++)
-			for(int j=0;j<saltos[i].length;j++)
-			  if(saltos[i][j] == 0.00 )
+		int cantidadTotalNulos = 0;
+		  for(int i=0;i<saltos.length;i++) {
+			for(int j=0;j<saltos[i].length;j++) {
+			  if(saltos[i][j] == 0.00 ) {
+				 cantidadTotalNulos = cantidadTotalNulos + 1 ;
 				 cantidadNulo = cantidadNulo + 1 ;
-		  
-		System.out.println("Cantidad de saltos nulos: " + cantidadNulo);
+			  }
+			}
+			System.out.println("El atleta " +(i+1) + " "+ "tiene " + " "+cantidadNulo +" cantidad de saltos nulos");
+			cantidadNulo = 0;
+		  }
 		System.out.println("\n");
+		System.out.println("Cantidad de saltos nulos total: " + cantidadTotalNulos);
+		System.out.println("\n");
+		
 		
 		System.out.println("Ejercico 4:");
 		System.out.println("\n");
